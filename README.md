@@ -1,14 +1,14 @@
-## What is Rancher Compose ? ##
+## What is Rancher Compose? ##
 
 Docker compose compatible client that deploys to Rancher.
 
-More information on the official Rancher documentation : http://rancher.docs.rancher.com/docs/rancher-compose/ and on the Rancher Compose GitHub repository: https://github.com/rancher/rancher-compose
+More information on the official Rancher documentation: http://rancher.docs.rancher.com/docs/rancher-compose/ and on the Rancher Compose GitHub repository: https://github.com/rancher/rancher-compose
 
-## How do you use this image ? ##
+## How do you use this image? ##
 
-**Not interactive and basic mode :**
+**Not interactive and basic mode:**
 
-Just run it as a normal command, sharing the directory containing your docker-compose.yml file and your rancher-compose.yml file :
+Just run it as a normal command, sharing the directory containing your docker-compose.yml file and your rancher-compose.yml file:
 
 ```bash
 $ docker run -v /absolute/path/to/project/dir/:/app:ro \
@@ -17,7 +17,7 @@ $ docker run -v /absolute/path/to/project/dir/:/app:ro \
              benchflow/rancher-compose:latest --help
 ```
 
-**Not interactive with custom docker-compose file, rancher-compose file and project name :**
+**Not interactive with custom docker-compose file, rancher-compose file and project name:**
 
 Add the -f, -r, -p options
 
@@ -32,7 +32,7 @@ $ docker run -v /absolute/path/to/project/dir/:/app:ro \
              --help
 ```
 
-**Not interactive with access control :**
+**Not interactive with access control:**
 
 Set the RANCHER_ACCESS_KEY and RANCHER_SECRET_KEY environment variables
 
