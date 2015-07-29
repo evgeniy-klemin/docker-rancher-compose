@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV RANCHER_COMPOSE_VERSION v0.2.5
 
 RUN apt-get update -q \
-	&& apt-get install -y -q --no-install-recommends curl ca-certificates tar wget \
+	&& apt-get install -y -q --no-install-recommends ca-certificates tar wget \
 	&& wget -O /tmp/rancher-compose-linux-amd64-${RANCHER_COMPOSE_VERSION}.tar.gz "https://github.com/rancher/rancher-compose/releases/download/${RANCHER_COMPOSE_VERSION}/rancher-compose-linux-amd64-${RANCHER_COMPOSE_VERSION}.tar.gz" \
 	&& tar -xf /tmp/rancher-compose-linux-amd64-${RANCHER_COMPOSE_VERSION}.tar.gz -C /tmp \
 	&& mv /tmp/rancher-compose-${RANCHER_COMPOSE_VERSION}/rancher-compose /usr/local/bin/rancher-compose \
