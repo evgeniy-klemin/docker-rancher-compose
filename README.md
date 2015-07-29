@@ -1,10 +1,13 @@
-## What is Rancher Compose? ##
+# What is Rancher Compose?
 
 Docker compose compatible client that deploys to Rancher.
 
 More information on the official Rancher documentation: http://rancher.docs.rancher.com/docs/rancher-compose/ and on the Rancher Compose GitHub repository: https://github.com/rancher/rancher-compose
 
-## How do you use this image? ##
+# Where to find the Rancher Compose Images
+https://registry.hub.docker.com/u/benchflow/rancher-compose/
+
+# How do you use this image?
 
 **Not interactive and basic mode:**
 
